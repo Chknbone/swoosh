@@ -11,13 +11,13 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/background_image"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/beginnerballerbg"
-        android:contentDescription="@string/background_image"/>
+        app:srcCompat="@drawable/beginnerballerbg"/>
 
     <ImageView
         android:id="@+id/logo"
@@ -61,23 +61,26 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
+            android:id="@+id/beginnerToggleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_button"
+            android:onClick="onBeginnerClick"
             android:text="@string/beginner"
             android:textColor="@android:color/background_light"
             android:textOff="@string/beginner"
             android:textOn="@string/beginner"/>
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/ballerToggleButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_weight="1"
             android:background="@drawable/swoosh_button"
+            android:onClick="onBallerClick"
             android:text="@string/baller"
             android:textColor="@android:color/background_light"
             android:textOff="@string/baller"
@@ -85,7 +88,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/finishButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -93,6 +96,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/swoosh_button"
         android:fontFamily="@font/montserrat"
+        android:onClick="onFinishClick"
         android:text="@string/finish"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"

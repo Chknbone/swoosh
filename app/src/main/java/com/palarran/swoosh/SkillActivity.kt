@@ -9,6 +9,7 @@ class SkillActivity : BaseActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_skill)
-		league = intent.getStringExtra(EXTRA_LEAGUE)
+		league = intent.getStringExtra(EXTRA_LEAGUE) //EXTRA from LeagueActivity's intent
 	}
+
 }

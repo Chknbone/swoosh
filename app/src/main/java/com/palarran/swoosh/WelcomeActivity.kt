@@ -10,6 +10,7 @@ class WelcomeActivity : BaseActivity() {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_welcome)
 
+		//listens for "Get Started" button to be clicked then starts LeagueActivity
 		getStartedButton.setOnClickListener {
 			val leagueIntent = Intent(this, LeagueActivity::class.java)
 			startActivity(leagueIntent)
