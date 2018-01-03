@@ -1,4 +1,4 @@
-package com.palarran.swoosh
+package com.palarran.swoosh.Controller
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
