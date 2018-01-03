@@ -7,16 +7,13 @@
     <string name="find_a_team_in_your_city_and_dominate_the_league">Find a team in your city and dominate the league</string>
     <string name="get_started">GET STARTED</string>
     <string name="league_background">league_background</string>
-    <string name="app_logo">app logo</string>
     <string name="desired_league">Desired League</string>
     <string name="mens">Mens</string>
-    <string name="mens">Mens</string>
-    <string name="mens">Mens</string>
     <string name="womens">Womens</string>
-    <string name="womens">Womens</string>
-    <string name="womens">Womens</string>
-    <string name="co_ed">Co-Ed</string>
-    <string name="co_ed">Co-Ed</string>
     <string name="co_ed">Co-Ed</string>
     <string name="next">Next</string>
+    <string name="i_am_a">I am a:</string>
+    <string name="baller">Baller</string>
+    <string name="finish">Finish</string>
+    <string name="beginner">Beginner</string>
 </resources>
