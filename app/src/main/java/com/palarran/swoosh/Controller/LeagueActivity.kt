@@ -13,9 +13,25 @@ class LeagueActivity : BaseActivity() {
 
 	var player = Player(league = "", skill = "")
 
+	//saves the instance state to outState and is saved to the EXTRA_PLAYER parcelable
+	override fun onSaveInstanceState(outState: Bundle?) {
+		super.onSaveInstanceState(outState)
+		outState?.putParcelable(EXTRA_PLAYER, player)
+	}
+
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_league)
+	}
+
+	//Now, if the device screen is rotated that saved EXTRA can be accessed and used in this new
+	// screen instance
+	override fun onRestoreInstanceState(savedInstanceState: Bundle?) {
+		super.onRestoreInstanceState(savedInstanceState)
+
+		if (savedInstanceState != null) {
+			player = savedInstanceState.getParcelable(EXTRA_PLAYER)
+		}
 	}
 
 	/*
